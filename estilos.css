@@ -99,3 +99,111 @@ ul {
     color: white;
     text-align: justify;
 }
+
+.head-contrib {
+    background: #ccc;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+.contribuidores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: rgb(247, 245, 245);
+    justify-content: space-between;
+}
+
+.contribuidores .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    transition: 0.5s;
+}
+.contribuidores .box:hover {
+    height: 400px;
+}
+.contribuidores .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contribuidores .box .imgBx img {
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.contribuidores .box:hover .imgBx img {
+    opacity: 1;
+}
+
+.contribuidores .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+} 
+.contribuidores .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(40px);
+} 
+
+.contribuidores .box:before, .box:after {
+    background: rgb(118, 129, 158);
+}
+.contribuidores .box .contenido {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.contribuidores .box:hover .contenido {
+    opacity: 1;    
+}
+.contribuidores .box h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 500px;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+}
+.contribuidores .box h2 span{
+    font-size: 10px;
+    color: black;
+    font-weight: 200px;
+    letter-spacing: 2px;
+
+}
