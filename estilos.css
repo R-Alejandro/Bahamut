@@ -22,6 +22,7 @@ body {
 a {
     color: black;  /*quitar estilos predeterminados de las listas*/
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul {
     list-style: none;
@@ -39,16 +40,24 @@ ul {
 .nav-main ul { /*la listas se organizan */
     display: flex;
 }
-.nav-main ul li { /* espacio a los elementos*/
-    padding: 12px;
+.nav-main ul li { /* espacio a los elementos de li*/
+    padding: 8px;
 }
 
-.nav-main ul.navegacion { /*de nav el ul que contenga la clase menu */
+.nav-main ul.navegacion { /*de nav el ul que contenga la clase navegacion */
     flex: 1;
     margin-left: 40px;
 }
 .nav-main ul.menu {
-    margin-right: 60px;
+    margin-right: 40px;
+}
+.nav-main ul li.loggin a {
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white
 }
 .search-nav {
     width: 140px;
@@ -65,6 +74,28 @@ ul {
 }
 
 .search-nav:focus {
-    width: 500px;
+    width: 480px;
+}
 
+.banner {
+    background-image: url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.op-banner {
+    background-color: rgba(91, 120, 145, 0.7);
+}
+.banner div h1 {
+    font-size: 60px; 
+    font-family: 'Candal';
+    color: white;
+    padding: 70px 70px 0px 70px;
+}
+.banner div p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 110px 20px 110px;
+    color: white;
+    text-align: justify;
 }
