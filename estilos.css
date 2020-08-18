@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.page {
+    width: 90%;
+    margin: auto; /*centrar el div*/
+}
+
+
+.log-nav {
+    width: 8%;
+    margin-left: 20px;
+}
+
+a {
+    color: black;  /*quitar estilos predeterminados de las listas*/
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.nav-main {
+    font-size: 20px;
+    background-color: white;
+    display: flex; /*permite organizar elementos */
+    justify-content: space-between; /*separar elementos*/
+    align-items: center; /*centro del nav*/
+    padding: 10px;
+}
+
+.nav-main ul { /*la listas se organizan */
+    display: flex;
+}
+.nav-main ul li { /* espacio a los elementos*/
+    padding: 12px;
+}
+
+.nav-main ul.navegacion { /*de nav el ul que contenga la clase menu */
+    flex: 1;
+    margin-left: 40px;
+}
+.nav-main ul.menu {
+    margin-right: 60px;
+}
+.search-nav {
+    width: 140px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .3), 0 6px 20px 0 rgba(0, 0, 0, .22);
+    background-image: url('images/encontrar.png');
+    background-position: 4px 10px;  /* cordenadas x, y*/
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 33px; /*padding (top, right, bottom, left)*/
+    transition: width 0.4s;
+}
+
+.search-nav:focus {
+    width: 500px;
+
+}
