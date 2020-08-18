@@ -99,3 +99,112 @@ ul {
     color: white;
     text-align: justify;
 }
+
+.head-contrib {
+    background: rgb(219, 218, 218);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+.contribuidores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 45vh; /*altura */
+    background: white;
+    justify-content: center;
+}
+
+.contribuidores .box {
+    position: relative;
+    width: 240px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.5s;
+}
+.contribuidores .box:hover {
+    height: 300px;
+}
+.contribuidores .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contribuidores .box .imgBx img {
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.contribuidores .box:hover .imgBx img {
+    opacity: 1;
+}
+
+.contribuidores .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+} 
+.contribuidores .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: rgb(27, 99, 233);
+    z-index: -2;
+    filter: blur(40px);
+} 
+
+.contribuidores .box:before, .box:after {
+    background: rgb(27, 99, 233);
+}
+.contribuidores .box .contenido {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.contribuidores .box:hover .contenido {
+    opacity: 1;    
+}
+.contribuidores .box h2 {
+    font-size: 20px;
+    font-family: 'Candal';
+    color: black;
+    font-weight: 500px;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+}
+.contribuidores .box h2 span{
+    font-size: 12px;
+    color: black;
+    font-weight: 200px;
+    letter-spacing: 2px;
+
+}
