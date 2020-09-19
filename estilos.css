@@ -32,7 +32,8 @@ ul {
     font-size: 20px;
     background-color: white;
     display: flex; /*permite organizar elementos */
-    justify-content: space-between; /*separar elementos*/
+    justify-content: center; /*separar elementos*/
+    flex-wrap: wrap;
     align-items: center; /*centro del nav*/
     padding: 10px;
 }
@@ -42,6 +43,7 @@ ul {
 }
 .nav-main ul li { /* espacio a los elementos de li*/
     padding: 8px;
+    text-align: justify;
 }
 
 .nav-main ul.navegacion { /*de nav el ul que contenga la clase navegacion */
